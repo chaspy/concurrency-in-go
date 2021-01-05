@@ -17,6 +17,7 @@ func main() {
 	decrement := func() {
 		lock.Lock()
 		defer lock.Unlock()
+		count--
 		fmt.Printf("Decrementing: %d\n", count)
 	}
 
